@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANET 3D | Saturn</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PLANET<span>3D</span></div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О планете</a>
+        <a href="#facts">Факты</a>
+        <a href="#quiz">Викторина</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+    <div id="space"></div>
+
+    <div class="hero-content">
+        <p class="subtitle">ВИРТУАЛЬНЫЙ МУЗЕЙ СОЛНЕЧНОЙ СИСТЕМЫ</p>
+
+        <h1>SATURN</h1>
+
+        <p class="description">
+            Исследуй одну из самых красивых планет
+            Солнечной системы. Вращай Сатурн,
+            изучай его кольца и открывай тайны космоса.
+        </p>
+
+        <a href="#about" class="main-button">
+            Начать исследование →
+        </a>
+
+        <p class="hint">Можешь вращать планету мышкой</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="changeZoom(-1)">+</button>
+        <button onclick="changeZoom(1)">−</button>
+        <button onclick="resetPlanet()">↻</button>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <p class="subtitle">КОСМИЧЕСКОЕ ПУТЕШЕСТВИЕ</p>
+
+    <h2>Знакомство с Сатурном</h2>
+
+    <p>
+        Сатурн — шестая планета от Солнца.
+        Он знаменит своими огромными кольцами,
+        состоящими из льда, пыли и каменных частиц.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <span>🪐</span>
+            <h3>Кольца</h3>
+            <p>Система колец Сатурна является одной из самых впечатляющих в Солнечной системе.</p>
+        </div>
+
+        <div class="card">
+            <span>🌡️</span>
+            <h3>Температура</h3>
+            <p>Температура верхних облаков составляет примерно −140 °C.</p>
+        </div>
+
+        <div class="card">
+            <span>⏳</span>
+            <h3>Сутки</h3>
+            <p>Один оборот вокруг своей оси занимает около 10,7 часа.</p>
+        </div>
+
+        <div class="card">
+            <span>🌙</span>
+            <h3>Спутники</h3>
+            <p>Сатурн имеет множество известных спутников, включая Титан.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="facts" id="facts">
+
+    <p class="subtitle">ИНТЕРЕСНЫЕ ДАННЫЕ</p>
+
+    <h2>Сатурн в цифрах</h2>
+
+    <div class="numbers">
+
+        <div>
+            <strong>120 536</strong>
+            <p>Диаметр планеты, км</p>
+        </div>
+
+        <div>
+            <strong>29,4</strong>
+            <p>Земных лет на один год</p>
+        </div>
+
+        <div>
+            <strong>6</strong>
+            <p>Место от Солнца</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quiz" id="quiz">
+
+    <p class="subtitle">ПРОВЕРЬ СЕБЯ</p>
+
+    <h2>Космическая викторина</h2>
+
+    <div class="quiz-box">
+
+        <h3>Какое место Сатурн занимает от Солнца?</h3>
+
+        <button onclick="checkAnswer(false)">Пятое</button>
+        <button onclick="checkAnswer(true)">Шестое</button>
+        <button onclick="checkAnswer(false)">Седьмое</button>
+
+        <p id="result"></p>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="logo">PLANET<span>3D</span></div>
+    <p>Исследуй Вселенную © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
